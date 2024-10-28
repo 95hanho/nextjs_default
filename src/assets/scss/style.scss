@@ -1,0 +1,112 @@
+main {
+	h2 {
+		padding: 0 20px;
+	}
+	&#free {
+		table,
+		td,
+		th {
+			border-collapse: collapse;
+			border: 3px solid #eee;
+		}
+		table {
+			thead th {
+				text-align: center;
+			}
+			tbody {
+				tr {
+					&:hover {
+						cursor: pointer;
+						td {
+							background-color: #eee;
+						}
+					}
+					td {
+						text-align: center;
+						&:nth-child(2) {
+							text-align: start;
+						}
+					}
+				}
+			}
+		}
+	}
+	&#userJoin {
+		width: 100%;
+		max-width: none;
+		background-color: #ececec;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		> div {
+			border-radius: 10px;
+			background-color: #fff;
+			padding: 20px 30px;
+			h3 {
+				padding-bottom: 10px;
+			}
+			h5 {
+				margin: 10px 0;
+			}
+			input {
+				font-size: 25px;
+				border: 1px solid #ddd;
+				border-radius: 7px;
+				padding: 0 5px;
+			}
+			.btn {
+				margin-top: 20px;
+				padding: 13px 0;
+				width: 100%;
+			}
+		}
+	}
+	// 작성 테이블 모양
+	.write-table {
+		width: 100%;
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		overflow: hidden;
+		.write-page {
+			background-color: #000;
+			color: #fff;
+			padding: 15px 20px;
+			font-size: 25px;
+			font-weight: 800;
+		}
+		.write-con {
+			width: 100%;
+			--bs-gutter-x: 0;
+			&:nth-child(n + 2) {
+				border-top: 1px solid #eee;
+			}
+			label,
+			div {
+				font-size: 20px;
+				font-weight: 600;
+				padding: 10px;
+				align-content: center;
+				input,
+				textarea {
+					font-size: 20px;
+				}
+			}
+			.form-label {
+				border-right: 1px solid #eee;
+			}
+		}
+	}
+	.write-btn {
+		text-align: right;
+		padding: 10px;
+		button {
+			margin-left: 5px;
+		}
+	}
+}
+// 버튼 공통
+.btn {
+	font-size: 18px;
+	padding: 8px 18px;
+	color: #fff;
+}
